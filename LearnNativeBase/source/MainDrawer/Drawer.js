@@ -32,24 +32,28 @@ export default class Drawer extends React.Component {
 */
 import React from 'react'
 import { createDrawerNavigator, createAppContainer  } from 'react-navigation';
-import One from './Screens/One.js'
-import Two from './Screens/Two.js'
-import Three from './Screens/Three.js'
-
+import LatestNews from './Screens/LatestNews.js'
+import NewsOutlets from './Screens/NewsOutlets.js'
+import Settings from './Screens/Settings.js'
+import About from './Screens/About.js'
+import DrawerContainer from './StyleDrawer/DrawerContainer.js'
 const MyDrawerNavigator = createDrawerNavigator({
-  Home: {
-    screen: One,
+  One: {
+    screen: LatestNews,
   },
   Two: {
-    screen: Two,
+    screen: NewsOutlets,
   },
   Three : {
-    screen : Three
+    screen : Settings
+  },
+  Four : {
+    screen : About
   },
 },
 {
-  initialRouteName:  'Home', //'AccordionExample'
-   //contentComponent: DrawerContainer
+  initialRouteName:  'One', //'AccordionExample'
+   contentComponent: DrawerContainer
 }
 );
 
