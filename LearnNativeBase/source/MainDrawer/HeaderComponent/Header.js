@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 //import { Container, Header,  } from "native-base";
-import { Accordion ,Container,Content, Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
+import {  Header, Left, Body, Right, Button, Icon, Title } from 'native-base';
 import {Text, View} from 'react-native';
-const dataArray = [
-  { title: "First Element", content: "Lorem ipsum dolor sit amet" },
-  { title: "Second Element", content: "Lorem ipsum dolor sit amet" },
-  { title: "Third Element", content: "Lorem ipsum dolor sit amet" }
-];
+
 export default class AccordionExample extends Component {
   render() {
     return (
