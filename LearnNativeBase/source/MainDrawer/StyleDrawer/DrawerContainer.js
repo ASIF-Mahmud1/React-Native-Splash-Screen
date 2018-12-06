@@ -1,7 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 import { NavigationActions } from 'react-navigation'
-
+import {Icon} from 'native-base'
+import IconF from 'react-native-vector-icons/FontAwesome';
+import IconE from 'react-native-vector-icons/Entypo';
 export default class DrawerContainer extends React.Component {
   render() {
     const { navigation } = this.props
@@ -16,11 +18,8 @@ export default class DrawerContainer extends React.Component {
        />
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
-          <Image
-                source={require('./Logos/Blackbird.jpg')}
-            //style={[styles.icon, {tintColor: tintColor}]}
-            style={{ width: 30, height: 30 }}
-          />
+
+          <IconE name='news'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() => {navigation.navigate('One'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
@@ -28,11 +27,8 @@ export default class DrawerContainer extends React.Component {
           </Text>
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
-          <Image
-                source={require('./Logos/Blackbird.jpg')}
-            //style={[styles.icon, {tintColor: tintColor}]}
-            style={{ width: 30, height: 30 }}
-          />
+
+          <IconF name='newspaper-o'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() => { navigation.navigate('Two');navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
@@ -40,11 +36,8 @@ export default class DrawerContainer extends React.Component {
           </Text>
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
-          <Image
-              source={require('./Logos/Blackbird.jpg')}
-            //style={[styles.icon, {tintColor: tintColor}]}
-            style={{ width: 30, height: 30 }}
-          />
+
+          <Icon name='settings'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() => {navigation.navigate('Three');navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
@@ -52,11 +45,8 @@ export default class DrawerContainer extends React.Component {
           </Text>
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
-          <Image
-                source={require('./Logos/Blackbird.jpg')}
-            //style={[styles.icon, {tintColor: tintColor}]}
-            style={{ width: 30, height: 30 }}
-          />
+
+          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() =>{ navigation.navigate('Four'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
