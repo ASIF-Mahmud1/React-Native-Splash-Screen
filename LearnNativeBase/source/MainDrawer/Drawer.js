@@ -37,6 +37,7 @@ import NewsOutlets from './Screens/NewsOutlets.js'
 import Settings from './Screens/Settings.js'
 import About from './Screens/About.js'
 import DrawerContainer from './StyleDrawer/DrawerContainer.js'
+import StackNavigator_LatestNews from './StackNavigator_LatestNews/StackNavigator_LatestNews.js'
 const MyDrawerNavigator = createDrawerNavigator({
   One: {
     screen: LatestNews,
@@ -49,6 +50,9 @@ const MyDrawerNavigator = createDrawerNavigator({
   },
   Four : {
     screen : About
+  },
+  Five : {
+    screen : StackNavigator_LatestNews
   },
 },
 {

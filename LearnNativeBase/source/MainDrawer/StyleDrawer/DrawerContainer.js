@@ -53,6 +53,15 @@ export default class DrawerContainer extends React.Component {
             About
           </Text>
         </View>
+        <View style={{flexDirection:'row', alignItems:'center',}}>
+
+          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
+          <Text
+            onPress={() =>{ navigation.navigate('Five'); navigation.closeDrawer()}}
+            style={styles.uglyDrawerItem}>
+            Latest News Stack
+          </Text>
+        </View>
 
       </View>
     )
