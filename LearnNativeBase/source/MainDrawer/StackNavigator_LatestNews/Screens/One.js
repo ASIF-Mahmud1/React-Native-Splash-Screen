@@ -13,7 +13,7 @@ class One extends  React.Component {
   {
     return(
       <Container>
-        <HeaderStack  openDrawer={() => this.props.navigation.goBack()} componentName= {componentName} arrowName={'md-arrow-round-back'} />
+        <HeaderStack  openDrawer={() => this.props.navigation.openDrawer()} componentName= {componentName}  />
         <Content>
           <Text>Latest News-- Screen One</Text>
           <Button onPress= { ()=> { this.props.navigation.navigate('Two') } }>
