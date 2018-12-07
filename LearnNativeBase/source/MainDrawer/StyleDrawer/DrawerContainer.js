@@ -21,7 +21,7 @@ export default class DrawerContainer extends React.Component {
 
           <IconE name='news'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => {navigation.navigate('One'); navigation.closeDrawer()}}
+            onPress={() => {navigation.navigate('LatestNews'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
             Latest News
           </Text>
@@ -30,7 +30,7 @@ export default class DrawerContainer extends React.Component {
 
           <IconF name='newspaper-o'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => { navigation.navigate('Two');navigation.closeDrawer()}}
+            onPress={() => { navigation.navigate('NewsOutlets');navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
           News Outlets
           </Text>
@@ -39,7 +39,7 @@ export default class DrawerContainer extends React.Component {
 
           <Icon name='settings'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => {navigation.navigate('Three');navigation.closeDrawer()}}
+            onPress={() => {navigation.navigate('Settings');navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
             Settings
           </Text>
@@ -48,7 +48,7 @@ export default class DrawerContainer extends React.Component {
 
           <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() =>{ navigation.navigate('Four'); navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('About'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
             About
           </Text>
@@ -57,7 +57,7 @@ export default class DrawerContainer extends React.Component {
 
           <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() =>{ navigation.navigate('Five'); navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('StackNavigator_LatestNews'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
             Latest News Stack
           </Text>

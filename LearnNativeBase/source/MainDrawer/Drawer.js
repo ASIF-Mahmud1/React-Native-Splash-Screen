@@ -39,24 +39,24 @@ import About from './Screens/About.js'
 import DrawerContainer from './StyleDrawer/DrawerContainer.js'
 import StackNavigator_LatestNews from './StackNavigator_LatestNews/StackNavigator_LatestNews.js'
 const MyDrawerNavigator = createDrawerNavigator({
-  One: {
+  LatestNews: {
     screen: LatestNews,
   },
-  Two: {
+  NewsOutlets: {
     screen: NewsOutlets,
   },
-  Three : {
+  Settings : {
     screen : Settings
   },
-  Four : {
+  About : {
     screen : About
   },
-  Five : {
+  StackNavigator_LatestNews : {
     screen : StackNavigator_LatestNews
   },
 },
 {
-  initialRouteName:  'One', //'AccordionExample'
+   initialRouteName:  'LatestNews', //'AccordionExample'
    contentComponent: DrawerContainer
 }
 );

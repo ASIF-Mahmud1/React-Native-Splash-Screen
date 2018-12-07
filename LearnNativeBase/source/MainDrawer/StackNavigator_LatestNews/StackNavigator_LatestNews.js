@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation';
 import One from './Screens/One'
 import Two from './Screens/Two'
 
-const RootStack = createStackNavigator(
+const StackNavigator_LatestNews = createStackNavigator(
 {
   One: {  screen: One },
   Two: { screen: Two },
@@ -18,4 +18,4 @@ const RootStack = createStackNavigator(
 
 
 
-export default RootStack;
+export default StackNavigator_LatestNews;
