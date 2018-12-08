@@ -5,7 +5,7 @@ export default class CardShowcaseExample extends Component {
   render() {
     return (
       <Container>
-        <Header />
+        {/*<Header />   Enable This Header only when you are testing this component- aka "CardShowcaseExample"  */  }
         <Content>
           <Card style={{flex: 0}}>
             <CardItem>
