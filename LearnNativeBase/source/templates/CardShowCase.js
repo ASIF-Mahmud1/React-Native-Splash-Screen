@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { Image, Linking ,ImageBackground,TouchableOpacity } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
 export default class CardShowcaseExample extends Component {
   render() {
@@ -17,12 +17,31 @@ export default class CardShowcaseExample extends Component {
                 </Body>
               </Left>
             </CardItem>
-            <CardItem>
+            <CardItem  style={{
+                borderWidth: 2, borderRadius: 4, paddingTop:10, borderStyle:'solid', borderColor: 'green', marginTop: 0}}>
               <Body>
-                <Image source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{height: 150, width: 200, flex: 1}}/>
-                <Text>
-                  Few Lines About The News Goes Here...
+
+                {/*
+                   <Text onPress={() => Linking.openURL('https://www.thedailystar.net/')} >Press Me!</Text>
+                <Button onPress={() => Linking.openURL('https://www.thedailystar.net/')}>
+                   <Image  onPress={() => Linking.openURL('https://www.thedailystar.net/')} source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{height: 150, width: 200, flex: 1}}/>
+                </Button>
+
+                <Image  onPress={() => Linking.openURL('https://www.thedailystar.net/')} source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{height: 150, width: 200, flex: 1}}/>
+
+                <Text onPress={() => Linking.openURL('https://www.thedailystar.net/')}>
+                   <Image source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{height: 150, width: 200, flex: 1}}/>
                 </Text>
+                */
+
+                }
+                <Button  onPress={() => Linking.openURL('https://www.thedailystar.net/')} style={{ marginTop: 0, paddingTop: 0, height:200,
+                    borderWidth: 2, borderRadius: 4,paddingTop:0, borderStyle:'solid', borderColor: 'red', }} >
+                   <Image   onPress={() => Linking.openURL('https://www.thedailystar.net/')} source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{ flex: 1,aspectRatio : 2, resizeMode: 'contain',  borderWidth: 2, borderRadius: 4,paddingTop:0,paddingBottom:0,marginTop:0, borderStyle:'solid', borderColor: 'orange',}}/>
+
+                </Button>
+
+
               </Body>
             </CardItem>
             <CardItem>
