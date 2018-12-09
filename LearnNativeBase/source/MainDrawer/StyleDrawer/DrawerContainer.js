@@ -49,9 +49,9 @@ export default class DrawerContainer extends React.Component {
 
           <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() =>{ navigation.navigate('About'); navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('StackNavigator_About'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
-            About
+            About Stack
           </Text>
         </View>
 
