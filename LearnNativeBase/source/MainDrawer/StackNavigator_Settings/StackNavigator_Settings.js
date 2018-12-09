@@ -5,7 +5,7 @@ import { createStackNavigator } from 'react-navigation';
 import One from './Screens/One'
 import Two from './Screens/Two'
 
-const StackNavigator_NewsOutlets = createStackNavigator(
+const StackNavigator_Settings = createStackNavigator(
 {
   One: {  screen: One },
   Two: { screen: Two },
@@ -18,4 +18,4 @@ const StackNavigator_NewsOutlets = createStackNavigator(
 
 
 
-export default StackNavigator_NewsOutlets;
+export default StackNavigator_Settings;

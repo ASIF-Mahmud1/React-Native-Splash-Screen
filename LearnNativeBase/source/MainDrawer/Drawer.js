@@ -39,6 +39,7 @@ import About from './Screens/About.js'
 import DrawerContainer from './StyleDrawer/DrawerContainer.js'
 import StackNavigator_LatestNews from './StackNavigator_LatestNews/StackNavigator_LatestNews.js'
 import StackNavigator_NewsOutlets from './StackNavigator_NewsOutlets/StackNavigator_NewsOutlets.js'
+import StackNavigator_Settings from './StackNavigator_Settings/StackNavigator_Settings.js'
 const MyDrawerNavigator = createDrawerNavigator({
   LatestNews: {
     screen: LatestNews,
@@ -57,7 +58,11 @@ const MyDrawerNavigator = createDrawerNavigator({
   },
   StackNavigator_NewsOutlets : {
     screen : StackNavigator_NewsOutlets
-  }
+  },
+  StackNavigator_Settings : {
+    screen : StackNavigator_Settings
+  },
+
 },
 {
    initialRouteName:  'LatestNews', //'AccordionExample'

@@ -38,11 +38,11 @@ export default class DrawerContainer extends React.Component {
 
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <Icon name='settings'  style={{fontSize: 30, color: 'black',}}/>
+          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => {navigation.navigate('Settings');navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('StackNavigator_Settings'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
-            Settings
+            Settings Stack
           </Text>
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
