@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { Image ,TouchableOpacity, Linking} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body } from 'native-base';
 export default class CardShowcaseExample extends Component {
   render() {
@@ -17,12 +17,14 @@ export default class CardShowcaseExample extends Component {
                 </Body>
               </Left>
             </CardItem>
-            <CardItem>
-              <Body>
+            <CardItem style={{height: 250, width: 200,paddingBottom:0 }}>
+              <Body >
+                <TouchableOpacity  onPress={() => Linking.openURL('https://www.thedailystar.net/')}>
                 <Image source={require('../MainDrawer/StyleDrawer/Logos/DailyStar.jpg')} style={{height: 150, width: 200, flex: 1}}/>
                 <Text>
                   Few Lines About The News Goes Here...
                 </Text>
+              </TouchableOpacity>
               </Body>
             </CardItem>
             <CardItem>
