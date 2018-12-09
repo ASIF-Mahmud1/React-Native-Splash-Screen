@@ -19,22 +19,23 @@ export default class DrawerContainer extends React.Component {
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <IconE name='news'  style={{fontSize: 30, color: 'black',}}/>
+          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => {navigation.navigate('LatestNews'); navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('StackNavigator_LatestNews'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
-            Latest News
+            Latest News Stack
           </Text>
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <IconF name='newspaper-o'  style={{fontSize: 30, color: 'black',}}/>
+          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
           <Text
-            onPress={() => { navigation.navigate('NewsOutlets');navigation.closeDrawer()}}
+            onPress={() =>{ navigation.navigate('StackNavigator_NewsOutlets'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
-          News Outlets
+            News Outlets Stack
           </Text>
         </View>
+
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
           <Icon name='settings'  style={{fontSize: 30, color: 'black',}}/>
@@ -53,15 +54,8 @@ export default class DrawerContainer extends React.Component {
             About
           </Text>
         </View>
-        <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
-          <Text
-            onPress={() =>{ navigation.navigate('StackNavigator_LatestNews'); navigation.closeDrawer()}}
-            style={styles.uglyDrawerItem}>
-            Latest News Stack
-          </Text>
-        </View>
+
 
       </View>
     )

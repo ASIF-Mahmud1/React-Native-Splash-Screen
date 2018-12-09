@@ -15,4 +15,4 @@ import MultipleCards from './source/templates/MultipleCards.js'
 import Grid from './source/templates/Grid.js'
 import MainDrawer from './source/MainDrawer/Drawer.js'
 //////////////////////////////////////////////////////////////////
-AppRegistry.registerComponent(appName, () => CardShowcaseExample);
+AppRegistry.registerComponent(appName, () => MainDrawer);
