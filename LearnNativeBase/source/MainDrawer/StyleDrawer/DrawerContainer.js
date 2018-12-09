@@ -19,7 +19,7 @@ export default class DrawerContainer extends React.Component {
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
+          <IconE name='news'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() =>{ navigation.navigate('StackNavigator_LatestNews'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
@@ -28,7 +28,7 @@ export default class DrawerContainer extends React.Component {
         </View>
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
+          <IconF name='newspaper-o'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() =>{ navigation.navigate('StackNavigator_NewsOutlets'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
@@ -38,7 +38,7 @@ export default class DrawerContainer extends React.Component {
 
         <View style={{flexDirection:'row', alignItems:'center',}}>
 
-          <Icon name='people'  style={{fontSize: 30, color: 'black',}}/>
+          <Icon name='settings'  style={{fontSize: 30, color: 'black',}}/>
           <Text
             onPress={() =>{ navigation.navigate('StackNavigator_Settings'); navigation.closeDrawer()}}
             style={styles.uglyDrawerItem}>
